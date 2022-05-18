@@ -1,0 +1,29 @@
+.selectionContainer{
+    position: absolute;
+    height: 100px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.selectionContainer > div{
+    border: 1px black solid;
+    color: rgb(17, 17, 17);
+    min-width: fit-content;
+    width: 150px;
+    height: 100%;
+    font-weight: 650;
+    background-color: rgba(181, 190, 190, 0.767);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.selectionContainer > div > img{
+    height: 30px;
+    width: 30px;
+    padding: 2px;
+}
