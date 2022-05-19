@@ -24,12 +24,17 @@
 
 .innerContainer{
     overflow: auto;
+    scroll-behavior: smooth;
+
+    box-sizing: border-box;
 }
 
 .innerContainer > img{
     overflow: auto;
-    border-bottom-left-radius: 5%;
-    border-bottom-right-radius: 5%;
+    border: 20px rgba(100, 5, 5, 0.281) solid;
+    box-sizing: border-box;
+}
+.innerContainer > img::-webkit-scrollbar{
     
 }
 

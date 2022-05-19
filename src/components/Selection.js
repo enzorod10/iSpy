@@ -21,8 +21,9 @@ function Selection(props) {
 
 
 
+
   return (
-    <div className={styles.selectionContainer} style={{display: props.selectionDisplay, left: props.clickedPosition[0] + 20, top: props.clickedPosition[1]}}>
+    <div className={styles.selectionContainer} style={{display: props.selectionDisplay, left: props.clickedPosition[0] + 170 > window.innerWidth ? props.clickedPosition[0] - 170 : props.clickedPosition[0] + 20, top: props.clickedPosition[1] + 120 > window.innerHeight ? props.clickedPosition[1] - 120 : props.clickedPosition[1] + 20}}>
       <div style={props.currentLevel.items[0].found ? {backgroundColor: 'green'} : {}} onClick={() => checkIfFound(props.currentLevel.items[0].name)} className={styles.option1}>
         <img alt='Item to find' src={props.currentLevel.items[0].image}/>{props.currentLevel.items[0].displayName}
       </div>

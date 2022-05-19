@@ -46,7 +46,6 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 let timerToggle = null;
 
-
 function App() {
   const [playStatus, setPlayStatus] = useState('inactive')
   const [menuDisplay,setMenuDisplay] = useState('flex')
@@ -202,6 +201,12 @@ function App() {
     selectionDisplay === 'flex' ? setSelectionDisplay('none') : setSelectionDisplay('flex')
   }
 
+  const turnOffSelectionDisplayOnScroll = () => {
+    if (selectionDisplay === 'flex'){
+      setSelectionDisplay('none')
+    }
+  }
+
   useEffect(() => {
     if (menuDisplay === 'flex' && playStatus === 'active'){
       setPlayStatus('paused')
@@ -296,7 +301,7 @@ function App() {
         <div className={styles.timer}> {currentModifiedTime}</div>
         <div onClick={toggleMenu}>MENU</div>
       </div>
-      <div className={styles.innerContainer}>
+      <div onScroll={turnOffSelectionDisplayOnScroll} className={styles.innerContainer}>
         <img style={picFilter} onClick={e => selectPosition(e)} alt={`${currentLevel.name} version selected`} src={currentLevel.image} />
       </div>
       <Selection foundItem={foundItem} doc={doc} getDoc={getDoc} currentLevel={currentLevel} db={db} relativePosition={relativePosition} clickedPosition={clickedPosition} toggleSelectionDisplay={toggleSelectionDisplay} selectionDisplay={selectionDisplay}/>
