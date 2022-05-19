@@ -9,10 +9,10 @@ function Selection(props) {
     const levelSnap = await props.getDoc(levelRef)
     if (levelSnap.exists()){
       const compareItem = levelSnap.data()[item]
-      if (((compareItem[0] >= props.relativePosition[0] && compareItem[0] <= props.relativePosition[0] + 25) 
-      || (compareItem[0] <= props.relativePosition[0] && compareItem[0] >= props.relativePosition[0] - 25))
-      && ((compareItem[1] >= props.relativePosition[1] && compareItem[1] <= props.relativePosition[1] + 25) 
-      || (compareItem[1] <= props.relativePosition[1] && compareItem[1] >= props.relativePosition[1] - 25))){
+      if (((compareItem[0] >= props.relativePosition[0] && compareItem[0] <= props.relativePosition[0] + 32) 
+      || (compareItem[0] <= props.relativePosition[0] && compareItem[0] >= props.relativePosition[0] - 32))
+      && ((compareItem[1] >= props.relativePosition[1] && compareItem[1] <= props.relativePosition[1] + 32) 
+      || (compareItem[1] <= props.relativePosition[1] && compareItem[1] >= props.relativePosition[1] - 32))){
         props.foundItem(item)
       }
     }
