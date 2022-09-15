@@ -1,6 +1,5 @@
 import styles from './Selection.module.css'
-import React, { useEffect, useState } from 'react';
-import { isCompositeComponent } from 'react-dom/test-utils';
+import React from 'react';
 
 
 function Selection(props) {
@@ -18,9 +17,6 @@ function Selection(props) {
     }
     props.toggleSelectionDisplay()
   }
-
-
-
 
   return (
     <div className={styles.selectionContainer} style={{display: props.selectionDisplay, left: props.clickedPosition[0] + 170 > window.innerWidth ? props.clickedPosition[0] - 170 : props.clickedPosition[0] + 20, top: props.clickedPosition[1] + 120 > window.innerHeight ? props.clickedPosition[1] - 120 : props.clickedPosition[1] + 20}}>

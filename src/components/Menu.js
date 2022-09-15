@@ -73,7 +73,7 @@ function Menu(props) {
           <div className={styles.accountContainer}>
             <div className={styles.enterAccountInfo}>
                 <input type='text' placeholder='Username' onChange={e => getUsername(e)}></input>
-                <div onClick={() => handleClick('login')}>Login</div>
+                <div style={{cursor: 'pointer'}} onClick={() => handleClick('login')}>Login</div>
                 <div className={styles.errorMessage} style={{position: 'absolute', top: '80px'}}> {errorMessage} </div>
             </div>
           </div>

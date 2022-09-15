@@ -14,6 +14,7 @@
 
 .innerContainer{
     height: 50%;
+    min-height: 400px;
     width: 75%;
     max-width: 600px;
     background: linear-gradient(rgba(255, 255, 255, 0.801), rgba(252, 252, 252, 0.295));
@@ -106,7 +107,6 @@
     border-top-left-radius: 60%;
     border-top-right-radius: 60%;
     width: fit-content;
-    box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.404);
     font-size: fit-content;
     height: 40px;
     font-weight: 900;
@@ -122,7 +122,7 @@
     height: 100%;
     max-height: 295px;
     background-color: rgba(20, 12, 12, 0.76);
-    box-shadow: 2px 2px 10px rgb(46, 46, 46);
+    box-shadow: 2px 2px 5px rgb(46, 46, 46);
     color: white;
     z-index: 1;
     padding: 5%;
@@ -260,8 +260,12 @@
 
 @media (max-width: 600px) and (max-height: 820px){
     .outerContainer{
-        margin-top: -50px;
-      height: 100vh;
+        margin-top: -200px;
+        height: 100vh;
+    }
+    
+    .errorMessage{
+        top: 75px !important;
     }
 
     .enterAccountInfo > input{

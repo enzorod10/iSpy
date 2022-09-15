@@ -16,9 +16,6 @@ import fallingrock from './components/assets/fallingrock.jpg'
 import odlaw from './components/assets/odlaw.jpg'
 import bigsnowball from './components/assets/bigsnowball.jpg'
 import snowfigure from './components/assets/snowfigure.jpg'
-
-
-
 import Menu from './components/Menu';
 import Selection from './components/Selection';
 
@@ -26,11 +23,6 @@ import Selection from './components/Selection';
 import { initializeApp } from "firebase/app";
 import { getFirestore, doc, getDoc, collection, where, query, getDocs } from "firebase/firestore"
 
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyDqm6gPmV6WjpqlhBq_ANN8XvK3lhdxJrk",
   authDomain: "where-s-waldo-590ec.firebaseapp.com",
@@ -52,7 +44,7 @@ function App() {
   const [selectionDisplay, setSelectionDisplay] = useState('none')
   const [clickedPosition, setClickedPosition] = useState([0, 0])
   const [relativePosition, setRelativePosition] = useState([0, 0])
-  const [allLevels, setAllLevels] = useState(
+  const allLevels =
     [
       {
         name: 'beach',
@@ -135,7 +127,8 @@ function App() {
           }
         ]
       },
-    ])
+    ]
+    
   const [currentLevel, setCurrentLevel] = useState(allLevels[2])
   const [picFilter, setPicFilter] = useState({})
   const [currentPlayer, setCurrentPlayer] = useState({})
@@ -211,7 +204,7 @@ function App() {
     if (menuDisplay === 'flex' && playStatus === 'active'){
       setPlayStatus('paused')
     }
-  }, [menuDisplay])
+  }, [menuDisplay, playStatus])
 
   useEffect(() => {
     playStatus === 'inactive' || playStatus === 'paused' || playStatus === 'finished' ? setPicFilter({opacity: '0.4', filter: 'blur(7px)'}) : setPicFilter({})
@@ -297,9 +290,9 @@ function App() {
     <div className={styles.outerContainer}>
       <Menu leaderboard={leaderboard} currentTime={currentTime} beginTimer={beginTimer} addCurrentPlayer={addCurrentPlayer} currentPlayer={currentPlayer} resumeGame={resumeGame} signedOut={signedOut} currentLevel={currentLevel} doc={doc} getDoc={getDoc} db={db} changeLevel={changeLevel} toggleMenu={toggleMenu} togglePlayStatus={togglePlayStatus} playStatus={playStatus} displayStatus={menuDisplay}/>
       <div className={styles.header}>
-        <div className={styles.title}>RANDOM TITLE</div>
+        <div className={styles.title}>iSpy: Find the objects</div>
         <div className={styles.timer}> {currentModifiedTime}</div>
-        <div onClick={toggleMenu}>MENU</div>
+        <div style={{cursor: 'pointer'}} onClick={toggleMenu}>MENU</div>
       </div>
       <div onScroll={turnOffSelectionDisplayOnScroll} className={styles.innerContainer}>
         <img style={picFilter} onClick={e => selectPosition(e)} alt={`${currentLevel.name} version selected`} src={currentLevel.image} />
