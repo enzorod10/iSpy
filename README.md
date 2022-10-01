@@ -10,9 +10,9 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/enzorod10/iSpy">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
+
+![iSpyLogo](https://user-images.githubusercontent.com/93365813/193400966-e740ca15-decf-47fb-823c-49c305034dfd.png)
+
 
 <h3 align="center">iSpy: Find the Hidden Objects</h3>
 
@@ -53,14 +53,14 @@
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+This project was created with React. The goal is to find the hidden objects in every map, in as little time as possible. I've placed the locations of the
+hidden objects in a firebase database, so that nobody can hack the locations through the front end. When a user clicks on an area of the screen, they will be prompted with a menu where they can select which object they think they have found. If they find the object, give or take a few pixels, then that obejct will turn green, indicating that it has been found. The leaderboard displays who has performed the best in each map!
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+![beach](https://user-images.githubusercontent.com/93365813/193401420-6525a927-ef22-4651-867b-03e22d6c04e5.png)
+![moon](https://user-images.githubusercontent.com/93365813/193401440-6b40e5a2-8b5a-47a7-8a62-33744ec1fcf6.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -100,7 +100,13 @@ Have node package manager (npm) installed
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+This can be a fun and competitive game to play with your friends. Challenge each other to see who can find all objects the quickest. First log in (don't need to create an account; simply just enter a name and log in). Then, select a level and click play. After clicking on any spot in the level, you will see which objects to find. 
+
+![gamepreview](https://user-images.githubusercontent.com/93365813/193401640-edc822c8-6022-48b7-93e7-148359017f31.png)
+
+Good luck!
+
+
 
 _For more examples, please refer to the [Documentation](https://github.com/enzorod10/iSpy.git)_
 
@@ -185,10 +191,3 @@ Project Link: [https://github.com/enzorod10/iSpy](https://github.com/enzorod10/i
 [license-url]: https://github.com/enzorod10/iSpy/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/enzo-rod
-[product-screenshot]: images/screenshot.png
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[CSS.com]: https://www.w3schools.com/css/css_intro.asp
-[CSS-url]: https://img.shields.io/badge/-CSS-blue
-[html2canvas.com]: https://html2canvas.hertzen.com/
-[html2canvas-url]: https://img.shields.io/badge/-html2canvas-%237cb342
