@@ -22,7 +22,7 @@
     <a href="https://github.com/enzorod10/iSpy"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://enzorod10.github.io/iSpy/">View Demo</a>
+    <a href="https://where-s-waldo-590ec.web.app/">View Demo</a>
     ·
     <a href="https://github.com/enzorod10/iSpy/issues">Report Bug</a>
     ·
