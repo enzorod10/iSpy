@@ -182,7 +182,7 @@ Project Link: [https://github.com/enzorod10/iSpy](https://github.com/enzorod10/i
 [issues-shield]: https://img.shields.io/github/issues/enzorod10/iSpy.svg?style=for-the-badge
 [issues-url]: https://github.com/enzorod10/iSpy/issues
 [license-shield]: https://img.shields.io/github/license/enzorod10/iSpy.svg?style=for-the-badge
-[license-url]: https://github.com/enzorod10/iSpy/blob/main/LICENSE.md
+[license-url]: https://github.com/enzorod10/iSpy/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/enzo-rod
 [product-screenshot]: images/screenshot.png
